@@ -1,0 +1,235 @@
+EESchema Schematic File Version 4
+LIBS:PicoPar6_Driver-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L custom:AL8807 U1
+U 1 1 5E931131
+P 4200 2600
+F 0 "U1" H 4150 3350 50  0000 C CNN
+F 1 "AL8807" H 4200 3250 50  0000 C CNN
+F 2 "gsg-modules:SOT25" H 3950 2550 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/LED-Drivers_DIODES_AL8807W5-7_AL8807W5-7_C113628.html" H 3950 2550 50  0001 C CNN
+F 4 "C113628" H 4200 2600 50  0001 C CNN "LCSC"
+	1    4200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5E931B85
+P 4800 3100
+F 0 "L1" H 4853 3146 50  0000 L CNN
+F 1 "33uH" H 4853 3055 50  0000 L CNN
+F 2 "custom:ABG06A45M330" H 4800 3100 50  0001 C CNN
+F 3 "~" H 4800 3100 50  0001 C CNN
+	1    4800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E9326EC
+P 4800 2300
+F 0 "R1" H 4870 2346 50  0000 L CNN
+F 1 "0.3R" H 4870 2255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4730 2300 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0805W8F300LT5F_C24084.html" H 4800 2300 50  0001 C CNN
+F 4 "C24084" H 4800 2300 50  0001 C CNN "LCSC"
+	1    4800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5E932E96
+P 4800 2700
+F 0 "C1" H 4915 2746 50  0000 L CNN
+F 1 "1uF" H 4915 2655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4838 2550 50  0001 C CNN
+F 3 "~" H 4800 2700 50  0001 C CNN
+	1    4800 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2450 4800 2500
+Wire Wire Line
+	4800 2850 4800 2950
+$Comp
+L Device:C C2
+U 1 1 5E9346CB
+P 6600 2950
+F 0 "C2" H 6715 2996 50  0000 L CNN
+F 1 "2.2uF" H 6715 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6638 2800 50  0001 C CNN
+F 3 "~" H 6600 2950 50  0001 C CNN
+	1    6600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 P3
+U 1 1 5E9352BD
+P 5600 2600
+F 0 "P3" H 5680 2592 50  0000 L CNN
+F 1 "CH_R" H 5680 2501 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Latch_53253-0270_1x02_P2.00mm_Vertical" H 5600 2600 50  0001 C CNN
+F 3 "~" H 5600 2600 50  0001 C CNN
+	1    5600 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2500 5400 2600
+Connection ~ 4800 2500
+Wire Wire Line
+	4800 2500 4800 2550
+Wire Wire Line
+	5400 2700 5400 2850
+Wire Wire Line
+	5400 2850 4800 2850
+Connection ~ 4800 2850
+Wire Wire Line
+	4800 2500 5400 2500
+$Comp
+L Connector_Generic:Conn_01x02 P2
+U 1 1 5E93839E
+P 3800 4000
+F 0 "P2" H 3880 3992 50  0000 L CNN
+F 1 "P_PWR" H 3880 3901 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3800 4000 50  0001 C CNN
+F 3 "~" H 3800 4000 50  0001 C CNN
+F 4 "C49661" H 3800 4000 50  0001 C CNN "LCSC"
+	1    3800 4000
+	-1   0    0    1   
+$EndComp
+Text GLabel 3850 2150 0    50   Input ~ 0
+CTRL_R
+Wire Wire Line
+	4500 2150 4800 2150
+Wire Wire Line
+	4500 2500 4800 2500
+Wire Wire Line
+	4500 3000 4500 3250
+Wire Wire Line
+	4500 3250 4800 3250
+$Comp
+L Device:D D1
+U 1 1 5E93D28F
+P 6000 2600
+F 0 "D1" V 6046 2521 50  0000 R CNN
+F 1 "BAT20JFILM" V 5955 2521 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 6000 2600 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/_STMicroelectronics_BAT20JFILM_BAT20JFILM_C155590.html" H 6000 2600 50  0001 C CNN
+	1    6000 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4800 2150 6000 2150
+Wire Wire Line
+	6000 2150 6000 2450
+Connection ~ 4800 2150
+Wire Wire Line
+	4800 3250 6000 3250
+Wire Wire Line
+	6000 3250 6000 2750
+Connection ~ 4800 3250
+$Comp
+L power:GNDREF #PWR0101
+U 1 1 5E94194A
+P 3600 3250
+F 0 "#PWR0101" H 3600 3000 50  0001 C CNN
+F 1 "GNDREF" H 3605 3077 50  0000 C CNN
+F 2 "" H 3600 3250 50  0001 C CNN
+F 3 "" H 3600 3250 50  0001 C CNN
+	1    3600 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2800 3600 2800
+Wire Wire Line
+	3600 2800 3600 3250
+Text GLabel 4750 1650 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	4750 1650 4800 1650
+Wire Wire Line
+	4800 1650 4800 2150
+$Comp
+L power:GNDREF #PWR0102
+U 1 1 5E9483EF
+P 4150 4150
+F 0 "#PWR0102" H 4150 3900 50  0001 C CNN
+F 1 "GNDREF" H 4155 3977 50  0000 C CNN
+F 2 "" H 4150 4150 50  0001 C CNN
+F 3 "" H 4150 4150 50  0001 C CNN
+	1    4150 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4000 4150 4150
+Text GLabel 4150 3900 2    50   Input ~ 0
+VIN
+Wire Wire Line
+	4000 3900 4150 3900
+Wire Wire Line
+	6600 2150 6600 2800
+Wire Wire Line
+	6000 2150 6600 2150
+Connection ~ 6000 2150
+$Comp
+L power:GNDREF #PWR0103
+U 1 1 5E94E332
+P 6600 3300
+F 0 "#PWR0103" H 6600 3050 50  0001 C CNN
+F 1 "GNDREF" H 6605 3127 50  0000 C CNN
+F 2 "" H 6600 3300 50  0001 C CNN
+F 3 "" H 6600 3300 50  0001 C CNN
+	1    6600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3100 6600 3300
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5E953A3A
+P 1300 6550
+F 0 "H1" H 1400 6596 50  0000 L CNN
+F 1 "MountingHole" H 1400 6505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1300 6550 50  0001 C CNN
+F 3 "~" H 1300 6550 50  0001 C CNN
+	1    1300 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5E9540A7
+P 1300 6750
+F 0 "H2" H 1400 6796 50  0000 L CNN
+F 1 "MountingHole" H 1400 6705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1300 6750 50  0001 C CNN
+F 3 "~" H 1300 6750 50  0001 C CNN
+	1    1300 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5E954267
+P 1300 6950
+F 0 "H3" H 1400 6996 50  0000 L CNN
+F 1 "MountingHole" H 1400 6905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1300 6950 50  0001 C CNN
+F 3 "~" H 1300 6950 50  0001 C CNN
+	1    1300 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4000 4150 4000
+$EndSCHEMATC

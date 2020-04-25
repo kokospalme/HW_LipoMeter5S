@@ -1,0 +1,19 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Screw
+D generic Screw
+K screw
+$ENDCMP
+#
+$CMP TLP152
+D Optocoupler, LED Input, Photocell Output
+K optocoupler
+F https://lcsc.com/product-detail/Optocouplers_TOSHIBA_TLP152-TPL-E_TOSHIBA-TLP152-TPL-E_C150122.html
+$ENDCMP
+#
+$CMP switch_generic
+D generic switch
+K switch generic toggle
+$ENDCMP
+#
+#End Doc Library
