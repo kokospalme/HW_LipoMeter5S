@@ -5,7 +5,8 @@ CAUTION: THIS IS UNDER HEAVY CONSTRUCTION AND NOT IN PRODUCTION STATE!
 ## v0.1 (latest)
 - [x] voltage measurement over I2C (ADS7830 IC)
 - [x] temp measurement with a Ds18b20 IC
-problems:
+
+PROBLEMS:
 - board gets fried when current is drawn from battery!
 ## v0.2
 - temp measurement with NTC
